@@ -6,42 +6,37 @@
     <title>Happy Birthday Pooja!</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <div class="card">
-            <div class="outside">
-                <div class="front">
-                    <h1 class="birthday-text">Happy Birthday</h1>
-                    <div class="cake">
-                        <div class="top-layer"></div>
-                        <div class="middle-layer"></div>
-                        <div class="bottom-layer"></div>
-                        <div class="candle"></div>
-                    </div>
-                </div>
-                <div class="back"></div>
-            </div>
-            <div class="inside">
-                <h1 class="name">Dear Pooja</h1>
-                <p>Wishing you a day filled with happiness and a year filled with joy. You're an amazing friend!</p>
-                <div class="polaroid">
-                    <img src="images/pooja.jpg" alt="Pooja" class="photo">
-                    <div class="caption">My Best Friend ❤️</div>
-                </div>
-                <div class="signature">- From your best friend</div>
-            </div>
+    <!-- Full-Screen Photo Slideshow -->
+    <div class="slideshow-container">
+        <div class="slides">
+            <img src="images/pooja.jpg" alt="Beautiful Birthday Girl">
+            <img src="images/memory1.jpg" alt="Beautiful Birthday Girl">
+            <img src="images/memory2.jpg" alt="Beautiful Birthday Girl">
+            <img src="images/memory3.jpg" alt="Beautiful Birthday Girl">
+            <img src="images/memory4.jpg" alt="Beautiful Birthday Girl">
+            <img src="images/memory5.jpg" alt="Beautiful Birthday Girl">
+            <img src="images/memory6.jpg" alt="Beautiful Birthday Girl">
+            <img src="images/memory7.jpg" alt="Beautiful Birthday Girl">
         </div>
+        <div class="caption">Beautiful Birthday Girl ❤️</div>
     </div>
 
-    <div class="floating-hearts"></div>
-    
+    <!-- Floating Hearts -->
+    <div class="hearts"></div>
+
+    <!-- Music Player -->
     <audio id="birthdaySong" loop>
         <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
     </audio>
-    
     <button id="musicBtn" class="music-btn">🎵 Play Music</button>
-    
+
+    <!-- Navigation Arrows -->
+    <button class="prev" onclick="prevSlide()">❮</button>
+    <button class="next" onclick="nextSlide()">❯</button>
+
     <script src="script.js"></script>
 </body>
 </html>
